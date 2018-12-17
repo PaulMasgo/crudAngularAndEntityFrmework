@@ -1,0 +1,7 @@
+<div style="padding:20px" data-ng-init="listar()">
+    <label>Digite el nuevo nombre:</label>
+    <input type="text" ng-model="Actualizar.Nombres" placeholder="{{Todos[Selec].Nombres}}"><br><br>
+    <label>Digite el nuevo apellido:</label>
+    <input type="text" ng-model="Actualizar.Apellidos" placeholder="{{Todos[Selec].Apellidos}}"><br><br>
+    <input type="button" value="Guardar" ng-click="ActualizarPersona(Todos[Selec].IDPersona)" />
+</div>

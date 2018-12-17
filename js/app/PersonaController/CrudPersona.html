@@ -1,0 +1,17 @@
+<div class="row">
+    <div style="padding:20px" data-ng-init="listar()">
+        <label>Nombres:</label>
+        <input type="text" ng-model="guardarPersona.Nombres"><br><br>
+        <label>Apellido:</label>
+        <input type="text" ng-model="guardarPersona.Apellidos"><br><br>
+        <input type="button" value="Guardar" ng-click="Guardar()" />
+    </div>
+    <div style="padding:20px">
+        <ul ng-repeat="item in Todos track by $index">
+            <li>{{item.Nombres}} {{item.Apellidos}}</li>
+            <button ng-click="eliminar(item.IDPersona)">Eliminar</button>
+
+            <a ng-click="Seleccionado($index)" href="#!persona/{{$index}}">Actualizar</a>
+
+    </div>
+</div>

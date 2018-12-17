@@ -1,0 +1,7 @@
+<div style="padding:20px" data-ng-init="listardesc()">
+    <label>Digite el nuevo nombre:</label>
+    <input type="text" ng-model="Actualizardesc.Nombres" placeholder="{{TodosDesc[Selecdesc].Nombres}}"><br><br>
+    <label>Digite la nueva Descripcion:</label>
+    <input type="text" ng-model="Actualizardesc.Descripcion" placeholder="{{TodosDesc[Selecdesc].Descripcion}}"><br><br>
+    <input type="button" value="Guardar" ng-click="ActualizarDescripcion(TodosDesc[Selecdesc].IDDescripcion)" />
+</div>

@@ -1,0 +1,18 @@
+<h1>Hola yo soy la descripcion</h1>
+<div class="row">
+    <div style="padding:20px" data-ng-init="listardesc()">
+        <label>Nombres:</label>
+        <input type="text" ng-model="guardaDescripcion.Nombres"><br><br>
+        <label>Apellido:</label>
+        <input type="text" ng-model="guardaDescripcion.Descripcion"><br><br>
+        <input type="button" value="Guardar" ng-click="GuardarDesc()" />
+    </div>
+    <div style="padding:20px">
+        <ul ng-repeat="item in TodosDesc track by $index">
+            <li>{{item.Nombres}} {{item.Descripcion}}</li>
+            <button ng-click="eliminardesc(item.IDDescripcion)">Eliminar</button>
+
+            <a ng-click="Seleccionado($index)" href="#!descripcion/{{$index}}">Actualizar</a>
+        </ul>
+    </div>
+</div>
