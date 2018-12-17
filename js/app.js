@@ -21,6 +21,11 @@ angular.module("persona").config(function($routeProvider) {
             templateUrl: "/js/app/DescripcionController/updateDescripcion.html",
             controller: "descripcioncontroller"
         }
+    ).when(
+        "/numeros/:id", {
+            templateUrl: "/js/app/NumerosController/crudNumeros.html",
+            controller: "Numeroscontroller"
+        }
     ).otherwise({
         redirectTo: "/persona"
     });
